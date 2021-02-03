@@ -1,7 +1,17 @@
 /* Global styles
 --------------------------------------------*/
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+} 
+
 body {
     color: 343434;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
 }
 img {   
     width: 300px;
@@ -12,11 +22,33 @@ a {
 a:hover {
     text-decoration: none;
 }
+h1 {
+	text-shadow: 2px 2px gray;
+	font-size: 80px;
+	line-height: 1;
+	text-align: left;
+}
+h2 {
+	font-size: 30px;
+	text-align: left;
+}
+h1, h2 {
+	text-shadow: 1px 2px gray;
+	font-family: 'Sriracha', cursive;
+	font-weight: 100;
+	margin: 0;
+}
+.content-wrap {
+	width: 800px;
+	margin:0 auto;
+	padding: 60px 0;
+	
+}
 
 /* Profile
 --------------------------------------------*/
 header {
-    background: blueviolet;
+    background: #744253;
     color: whitesmoke;
 }
 
@@ -24,40 +56,56 @@ header {
 /* Projects
 --------------------------------------------*/
 .projects {
-    background: oldlace;
+    background: #B55353;
+	color: whitesmoke;
 }
 .projects a {
     color: purple;
 }
-}
 .projects .btn {
-    color: beige;
-    background: darkblue;
+    color: #CC5E5E;
+    background: whitesmoke;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+	display: inline-block;
 }
 .projects .btn:hover {
     background: rgba(52,52,52,80%); /*last value is opacity percentage*/
 }
-
+.project-item {
+	overflow: hidden;
+	border-bottom: 1px dashed whitesmoke;
+	padding: 25px 0;
+}
+.project-item img{
+	float: left;
+	margin-right: 20px;
+}
+.project-item h3{
+	margin-top: 0;
+}
 
 /* Work Experience
 --------------------------------------------*/
 .work-experience {
-    background: teal;
+    background: #CC5E5E;
     color: whitesmoke;
 }
 
 
 /* Education
 --------------------------------------------*/
-
+.education {
+	background: #D4665E;
+	coor: whitesmoke;
+}
 
 
 /* Contact Info
 --------------------------------------------*/
 footer {
-    background: darkgray;
+    background: #DB8A8A;
+	color: whitesmoke;
 }
 
